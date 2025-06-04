@@ -9,7 +9,7 @@ async function getWeather() {
     return;
   }
 
-  const url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&aqi=yes`;
+  const url = `https://corsproxy.io/?https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&aqi=yes`;
 
   try {
     const response = await fetch(url);
